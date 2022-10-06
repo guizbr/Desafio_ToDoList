@@ -1,0 +1,134 @@
+.emptyListTasks {
+  height: 244px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  border-top: 1px solid var(--gray-400);
+  border-radius: 8px;
+}
+
+.emptyListTasks img {
+  margin-bottom: 1rem;
+}
+
+.emptyListTasks p {
+  color: var(--gray-300);
+  line-height: 1.4;
+}
+
+.emptyListTasks p:first-of-type {
+  font-weight: bold;
+}
+
+.listTasks ul li {
+  display: flex;
+  align-items: flex-start;
+  padding: 1rem;
+  background: var(--gray-500);
+  border: 1px solid var(--gray-400);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.listTasks ul li span {
+  font-size: 0.875rem;
+  padding: 0 1.5rem;
+  line-height: 1.4;
+}
+
+.lineThrough {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.listTasks ul li button {
+  margin-left: auto;
+  line-height: 0;
+  background: transparent;
+  border: 0;
+  color: var(--gray-300);
+  padding: 0.3125rem;
+  border-radius: 4px;
+  cursor: pointer;
+
+  transition: background 0.2s, color 0.2s;
+}
+
+.listTasks ul li button:hover {
+  background: var(--gray-400);
+  color: var(--red);
+}
+.listTasks ul > li {
+  margin-bottom: 0.75rem;
+}
+
+.listTasks ul li + li {
+  margin-bottom: 0.75rem;
+}
+
+/** style input checkbox **/
+.listTasks ul li input[type='checkbox'] {
+  margin-top: 0.1875rem;
+  cursor: pointer;
+  outline: transparent !important;
+}
+
+.listTasks ul li input[type='checkbox']:before {
+  position: relative;
+  display: block;
+  left: -4px;
+  top: -1px;
+  width: 17px;
+  height: 17px;
+  border: 2px solid var(--blue);
+  border-radius: 999px;
+  content: '';
+  background: var(--gray-500);
+}
+
+.listTasks ul li input[type='checkbox']:after {
+  position: relative;
+  display: block;
+  left: -0.8px;
+  top: -18.5px;
+  width: 15px;
+  height: 14px;
+  border-radius: 999px;
+  content: '';
+  background: var(--gray-500);
+  clip-path: polygon(28% 38%, 41% 53%, 75% 24%, 86% 38%, 40% 78%, 15% 50%);
+}
+
+.listTasks ul li input[type='checkbox']:not(:disabled):hover:after {
+  background: #0c1c25;
+}
+
+.listTasks ul li input[type='checkbox']:not(:disabled):hover:before {
+  border-color: var(--blue-dark);
+  background: #0c1c25;
+}
+
+.listTasks ul li input[type='checkbox']:checked:before {
+  border-color: var(--purple-dark);
+  background: var(--purple-dark);
+}
+
+.listTasks ul li input[type='checkbox']:checked:after {
+  background: var(--gray-100);
+}
+
+.listTasks ul li input[type='checkbox']:not(:disabled):checked:hover:before {
+  border-color: var(--purple);
+  background: var(--purple);
+}
+
+.listTasks ul li input[type='checkbox']:not(:disabled):checked:hover:after {
+  background: var(--gray-100);
+}
+
+.listTasks ul li input[type='checkbox']:focus:before {
+  box-shadow: 0 0 0 1px var(--gray-400), 0 0 0 2px var(--purple-dark);
+}
+/** termina style input checkbox **/
