@@ -1,6 +1,6 @@
 # Desafio ToDo List 
 
-Neste desafio do curso Ignite da Rocketseat, desenvolvi uma aplicação de controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
+Neste desafio do curso Ignite da Rocketseat, desenvolvi uma aplicação do zero para o controle de tarefas no estilo to-do list, que contém as seguintes funcionalidades:
 
  - Adicionar uma nova tarefa
  - Marcar e desmarcar uma tarefa como concluída
